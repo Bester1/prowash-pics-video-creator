@@ -1,0 +1,25 @@
+{
+  "name": "prowash-pics-video-creator",
+  "version": "1.0.0",
+  "description": "Automated video creation from images and audio using json2video-mcp",
+  "main": "create_video_from_images.js",
+  "scripts": {
+    "start": "node create_video_from_images.js",
+    "test": "node create_video_from_images.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "video",
+    "images",
+    "audio",
+    "automation",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

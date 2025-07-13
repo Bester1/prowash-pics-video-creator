@@ -1,0 +1,27 @@
+# Environment variables - KEEP YOUR API KEYS SAFE!
+.env
+.env.local
+.env.production
+
+# Node modules
+node_modules/
+
+# Temporary files
+json2video_input.json
+
+# Output videos (before moving to done folder)
+output_video.mp4
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Claude assistant files
+.claude/

@@ -1,0 +1,31 @@
+{
+    "mcpServers": {
+      "PixVerse": {
+        "command": "uvx",
+        "args": ["pixverse-mcp"],
+        "env": {
+          "PIXVERSE_API_KEY": "${PIXVERSE_API_KEY}"
+        }
+      },
+      "MCP_DOCKER": {
+        "command": "docker",
+        "args": ["mcp", "gateway", "run"]
+      },
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/user/Desktop",
+          "/Users/user/Downloads"
+        ]
+      },
+      "json2video-mcp": {
+        "command": "npx",
+        "args": ["-y", "@omerrgocmen/json2video-mcp"],
+        "env": {
+          "JSON2VIDEO_API_KEY": "${JSON2VIDEO_API_KEY}"
+        }
+      }
+    }
+  }
