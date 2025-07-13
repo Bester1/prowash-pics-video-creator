@@ -1,0 +1,83 @@
+{
+  "comment": "Simple Working Prowash Template",
+  "resolution": "full-hd",
+  "quality": "high", 
+  "variables": {
+    "image1": "https://via.placeholder.com/1920x1080",
+    "image2": "https://via.placeholder.com/1920x1080",
+    "image3": "https://via.placeholder.com/1920x1080", 
+    "image4": "https://via.placeholder.com/1920x1080",
+    "image5": "https://via.placeholder.com/1920x1080"
+  },
+  "scenes": [
+    {
+      "comment": "Scene 1",
+      "duration": 2,
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image1}}",
+          "width": 1920,
+          "height": 1080,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "comment": "Scene 2", 
+      "duration": 2,
+      "transition": {"style": "fade", "duration": 0.5},
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image2}}",
+          "width": 1920,
+          "height": 1080,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "comment": "Scene 3",
+      "duration": 2,
+      "transition": {"style": "fade", "duration": 0.5},
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image3}}",
+          "width": 1920,
+          "height": 1080,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "comment": "Scene 4",
+      "duration": 2,
+      "transition": {"style": "fade", "duration": 0.5},
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image4}}",
+          "width": 1920,
+          "height": 1080,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "comment": "Scene 5",
+      "duration": 2,
+      "transition": {"style": "fade", "duration": 0.5},
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image5}}",
+          "width": 1920,
+          "height": 1080,
+          "duration": 2
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@
   "main": "create_video_from_images.js",
   "scripts": {
     "start": "node create_video_from_images.js",
+    "professional": "node create_professional_video.js",
     "test": "node create_video_from_images.js"
   },
   "dependencies": {

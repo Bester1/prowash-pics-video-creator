@@ -1,0 +1,417 @@
+{
+  "comment": "Professional Prowash Pics Slideshow Template",
+  "resolution": "full-hd",
+  "quality": "high",
+  "variables": {
+    "image1": "https://via.placeholder.com/1920x1080",
+    "image2": "https://via.placeholder.com/1920x1080", 
+    "image3": "https://via.placeholder.com/1920x1080",
+    "image4": "https://via.placeholder.com/1920x1080",
+    "image5": "https://via.placeholder.com/1920x1080",
+    "audioTrack": "https://via.placeholder.com/audio.mp3",
+    "title": "Prowash Professional Results",
+    "subtitle": "Before & After Showcase",
+    "brandColor": "#2C3E50",
+    "accentColor": "#E74C3C"
+  },
+  "scenes": [
+    {
+      "comment": "Opening Title Scene",
+      "duration": 3,
+      "background-color": "{{brandColor}}",
+      "elements": [
+        {
+          "type": "text",
+          "text": "{{title}}",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 72,
+          "font-weight": "bold",
+          "x": "center",
+          "y": 400,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "fadeIn",
+              "start": 0,
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "type": "text", 
+          "text": "{{subtitle}}",
+          "style": "005",
+          "color": "{{accentColor}}",
+          "font-size": 36,
+          "x": "center",
+          "y": 500,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "fadeIn", 
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "color": "{{accentColor}}",
+          "width": 300,
+          "height": 4,
+          "x": "center",
+          "y": 550,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "slideInLeft",
+              "start": 1,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Image 1 with Professional Overlay",
+      "transition": {
+        "style": "fade",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image1}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "zoomIn",
+              "start": 0,
+              "duration": 4,
+              "scale": "1.0 to 1.1"
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle", 
+          "color": "rgba(44, 62, 80, 0.3)",
+          "width": 1920,
+          "height": 200,
+          "x": 0,
+          "y": 880,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #1",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "slideInLeft",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Image 2 with Professional Overlay",
+      "transition": {
+        "style": "slideLeft",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image2}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "zoomIn",
+              "start": 0,
+              "duration": 4,
+              "scale": "1.0 to 1.1"
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "color": "rgba(231, 76, 60, 0.3)",
+          "width": 1920,
+          "height": 200,
+          "x": 0,
+          "y": 880,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #2",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "slideInRight",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Image 3 with Professional Overlay",
+      "transition": {
+        "style": "slideUp",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image3}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "zoomIn",
+              "start": 0,
+              "duration": 4,
+              "scale": "1.0 to 1.1"
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "color": "rgba(44, 62, 80, 0.3)",
+          "width": 1920,
+          "height": 200,
+          "x": 0,
+          "y": 880,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #3",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "slideInLeft",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Image 4 with Professional Overlay",
+      "transition": {
+        "style": "slideDown",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image4}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "zoomIn",
+              "start": 0,
+              "duration": 4,
+              "scale": "1.0 to 1.1"
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "color": "rgba(231, 76, 60, 0.3)",
+          "width": 1920,
+          "height": 200,
+          "x": 0,
+          "y": 880,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #4",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "slideInRight",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Image 5 with Professional Overlay",
+      "transition": {
+        "style": "circleOpen",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image5}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "zoomIn",
+              "start": 0,
+              "duration": 4,
+              "scale": "1.0 to 1.1"
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "rectangle",
+          "color": "rgba(44, 62, 80, 0.3)",
+          "width": 1920,
+          "height": 200,
+          "x": 0,
+          "y": 880,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #5",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4,
+          "animations": [
+            {
+              "type": "slideInLeft",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "comment": "Closing Scene with Contact Info",
+      "duration": 3,
+      "background-color": "{{brandColor}}",
+      "transition": {
+        "style": "fade",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "text",
+          "text": "Professional Car Detailing",
+          "style": "007",
+          "color": "#FFFFFF",
+          "font-size": 64,
+          "font-weight": "bold",
+          "x": "center",
+          "y": 350,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "fadeIn",
+              "start": 0,
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Contact us for premium results",
+          "style": "005",
+          "color": "{{accentColor}}",
+          "font-size": 36,
+          "x": "center",
+          "y": 450,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "fadeIn",
+              "start": 0.5,
+              "duration": 1
+            }
+          ]
+        },
+        {
+          "type": "shape",
+          "shape": "circle",
+          "color": "{{accentColor}}",
+          "width": 20,
+          "height": 20,
+          "x": "center",
+          "y": 500,
+          "duration": 3,
+          "animations": [
+            {
+              "type": "pulse",
+              "start": 1,
+              "duration": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "type": "audio",
+      "src": "{{audioTrack}}"
+    }
+  ]
+}

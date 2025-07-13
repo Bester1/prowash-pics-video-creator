@@ -1,0 +1,226 @@
+{
+  "comment": "Professional Prowash Pics Slideshow Template - Fixed",
+  "resolution": "full-hd",
+  "quality": "high",
+  "variables": {
+    "image1": "https://via.placeholder.com/1920x1080",
+    "image2": "https://via.placeholder.com/1920x1080", 
+    "image3": "https://via.placeholder.com/1920x1080",
+    "image4": "https://via.placeholder.com/1920x1080",
+    "image5": "https://via.placeholder.com/1920x1080",
+    "audioTrack": "https://via.placeholder.com/audio.mp3",
+    "title": "Prowash Professional Results",
+    "subtitle": "Before & After Showcase",
+    "brandColor": "#2C3E50",
+    "accentColor": "#E74C3C"
+  },
+  "scenes": [
+    {
+      "comment": "Opening Title Scene",
+      "duration": 3,
+      "background-color": "{{brandColor}}",
+      "elements": [
+        {
+          "type": "text",
+          "text": "{{title}}",
+          "color": "#FFFFFF",
+          "font-size": 72,
+          "font-weight": "bold",
+          "x": "center",
+          "y": 400,
+          "duration": 3
+        },
+        {
+          "type": "text", 
+          "text": "{{subtitle}}",
+          "color": "{{accentColor}}",
+          "font-size": 36,
+          "x": "center",
+          "y": 500,
+          "duration": 3
+        }
+      ]
+    },
+    {
+      "comment": "Image 1 with Professional Overlay",
+      "duration": 4,
+      "transition": {
+        "style": "fade",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image1}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #1",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "comment": "Image 2 with Professional Overlay",
+      "duration": 4,
+      "transition": {
+        "style": "slideLeft",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image2}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #2",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "comment": "Image 3 with Professional Overlay",
+      "duration": 4,
+      "transition": {
+        "style": "slideUp",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image3}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #3",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "comment": "Image 4 with Professional Overlay",
+      "duration": 4,
+      "transition": {
+        "style": "slideDown",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image4}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #4",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "comment": "Image 5 with Professional Overlay",
+      "duration": 4,
+      "transition": {
+        "style": "circleOpen",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "image",
+          "src": "{{image5}}",
+          "width": 1920,
+          "height": 1080,
+          "x": 0,
+          "y": 0,
+          "duration": 4
+        },
+        {
+          "type": "text",
+          "text": "Professional Results #5",
+          "color": "#FFFFFF",
+          "font-size": 48,
+          "font-weight": "bold",
+          "x": 60,
+          "y": 950,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "comment": "Closing Scene with Contact Info",
+      "duration": 3,
+      "background-color": "{{brandColor}}",
+      "transition": {
+        "style": "fade",
+        "duration": 1
+      },
+      "elements": [
+        {
+          "type": "text",
+          "text": "Professional Car Detailing",
+          "color": "#FFFFFF",
+          "font-size": 64,
+          "font-weight": "bold",
+          "x": "center",
+          "y": 350,
+          "duration": 3
+        },
+        {
+          "type": "text",
+          "text": "Contact us for premium results",
+          "color": "{{accentColor}}",
+          "font-size": 36,
+          "x": "center",
+          "y": 450,
+          "duration": 3
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "type": "audio",
+      "src": "{{audioTrack}}"
+    }
+  ]
+}

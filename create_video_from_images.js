@@ -3,6 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 require('dotenv').config();
 const https = require('https');
+const http = require('http');
 
 // Configuration
 const config = {
