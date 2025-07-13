@@ -79,10 +79,14 @@ const duration = Math.floor(Math.random() * (config.maxDuration - config.minDura
 console.log('Video duration:', duration, 'seconds');
 
 // IMPORTANT: json2video requires remote URLs, not local files!
-// For now, using sample images to test the API
 const imageDuration = Math.max(1, Math.floor(duration / selectedImages.length));
 
-// Sample images for testing - replace with your uploaded images
+// GitHub repository configuration
+const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'YOUR_USERNAME'; // Set in .env
+const GITHUB_REPO = process.env.GITHUB_REPO || 'prowash-pics-video-creator';
+const USE_GITHUB_IMAGES = process.env.USE_GITHUB_IMAGES === 'true';
+
+// Sample images for testing - fallback if GitHub not configured
 const sampleImages = [
   "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg",
   "https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg",
@@ -93,14 +97,32 @@ const sampleImages = [
 
 const sampleAudio = "https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3";
 
-console.log('\n⚠️  IMPORTANT: Using sample remote images for testing!');
-console.log('Your local images are not being uploaded to json2video.');
-console.log('To use your own images, you need to upload them to a hosting service first.\n');
+let imageUrls, audioUrl;
+
+if (USE_GITHUB_IMAGES && GITHUB_USERNAME !== 'YOUR_USERNAME') {
+  // Use GitHub raw URLs for your actual images
+  const baseUrl = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPO}/main`;
+  imageUrls = selectedImages.map(img => `${baseUrl}/images/${img}`);
+  audioUrl = `${baseUrl}/audio/${selectedAudio}`;
+  
+  console.log('\n✅ Using your GitHub-hosted images!');
+  console.log(`Repository: https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO}`);
+} else {
+  // Use sample images for testing
+  imageUrls = sampleImages.slice(0, selectedImages.length);
+  audioUrl = sampleAudio;
+  
+  console.log('\n⚠️  Using sample remote images for testing!');
+  console.log('To use your own images:');
+  console.log('1. Push this project to GitHub');
+  console.log('2. Set GITHUB_USERNAME and USE_GITHUB_IMAGES=true in .env');
+  console.log('3. Run the script again\n');
+}
 const json2videoInput = {
   resolution: "full-hd",
   quality: "high",
-  scenes: sampleImages.slice(0, selectedImages.length).map((imageUrl, index) => ({
-    comment: `Scene ${index + 1}: Sample image ${index + 1}`,
+  scenes: imageUrls.map((imageUrl, index) => ({
+    comment: `Scene ${index + 1}: ${USE_GITHUB_IMAGES ? selectedImages[index] : 'Sample image ' + (index + 1)}`,
     transition: index > 0 ? {
       style: "fade",
       duration: 0.5
@@ -116,7 +138,7 @@ const json2videoInput = {
   elements: [
     {
       type: "audio",
-      src: sampleAudio
+      src: audioUrl
     }
   ]
 };
